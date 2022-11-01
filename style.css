@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+header {
+  background-color: black;
+  padding: 25px 0;
+  color: white;
+  text-align: center;
+}
+
+header ul {
+  padding: 25px;
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-around;
+}
+header ul li {
+  border: 1px solid white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 98%;
+  height: 70%;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: auto;
+}
+
+.content .box {
+  border-radius: 50%;
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  margin: 25px;
+}
+
+.content .box::before {
+  content: "#000";
+  font-size: 25px;
+  display: none;
+  text-align: center;
+  line-height: -100%;
+}
+
+.content .box:hover::before {
+  display: block;
+}
